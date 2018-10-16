@@ -32,18 +32,22 @@ export default class Account extends Component {
     }
 
     resetPass(){
+
         let {cpwd, npwd, cnpwd} = this.state;
+        let id = this.props.user.user.parentId;
 
         let payload = {
             cpwd,
             npwd,
-            cnpwd
+            cnpwd,
+            id: id
         };
 
         if(payload.cpwd && payload.npwd && payload.cnpwd) {
             if(npwd !== cnpwd){
                 this.setState({errorMsg: 'Ensure the new entered passwords match!'});
             }
+
             this.props.resetPass(payload)
                 .then(res=>{
                     if(res.data.response === "success"){

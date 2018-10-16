@@ -63,14 +63,11 @@ export function resetPass(payload) {
 
     return (dispatch, getState) => {
 
-        let { par_id } = getState().user.user.parentId;
-
         let data = {
-            parent_id: 2168,
+            parent_id: payload.id,
             user_pwd: payload.cpwd,
-            new_password: payload.npwd
+            new_password: payload.npwd,
         };
-
 
         dispatch({type: RESET_PASS});
 

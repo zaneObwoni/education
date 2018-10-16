@@ -107,7 +107,7 @@ export default class Home extends Component {
                                 </View>
                             </TouchableOpacity>
                           )
-                        })
+                        }).reverse()
                         : <Text style={styles.newsNote}>No new news from this school.</Text>
                       }
                     </View>
