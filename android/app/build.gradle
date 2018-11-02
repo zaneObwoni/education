@@ -98,7 +98,6 @@ def getPassword(String currentUser, String keyChain) {
     //noinspection GroovyAssignabilityCheck
     stdout.toString().trim()
 }
-def pass = getPassword("Jennifer Francis","android_keystore_testing")
 
 
 android {

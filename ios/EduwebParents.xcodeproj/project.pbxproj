@@ -507,6 +507,10 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 949Z8YD5LQ;
+						ProvisioningStyle = Manual;
+					};
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "EduwebParents" */;
@@ -871,8 +875,12 @@
 			baseConfigurationReference = 99DB8BD2A607232F7AAEBBAB /* Pods-EduwebParents.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 949Z8YD5LQ;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -885,7 +893,9 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rivercross.eduwebearents;
 				PRODUCT_NAME = EduwebParents;
+				PROVISIONING_PROFILE_SPECIFIER = EduwebParents;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -895,7 +905,11 @@
 			baseConfigurationReference = 703B1E843401B4BEF3619A21 /* Pods-EduwebParents.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 949Z8YD5LQ;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -908,7 +922,9 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rivercross.eduwebearents;
 				PRODUCT_NAME = EduwebParents;
+				PROVISIONING_PROFILE_SPECIFIER = EduwebParents;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
